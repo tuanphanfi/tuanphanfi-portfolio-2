@@ -1,20 +1,14 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import MyNavBar from '../common/navBar';
+import MyFooter from '../common/footer';
 
 const index = () => {
     return (
         <div>
+            <MyNavBar />
             <h1>How to upload into a respository in GITHUB:</h1>
+            <MyFooter />
 
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-
-                </li>
-                <li>
-                    <Link to="/turotialPage">Github tutorial</Link>
-                </li>
-            </ul>
 
         </div>
     );
