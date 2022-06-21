@@ -19,7 +19,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/turotialPage" element={<TutorialPage />} />
+        <Route path="/turotial" element={<TutorialPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

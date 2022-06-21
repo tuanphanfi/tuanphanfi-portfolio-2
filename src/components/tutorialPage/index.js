@@ -1,9 +1,15 @@
 import React from 'react';
+import MyNavBar from '../common/navBar';
+import MyFooter from '../common/footer';
 
 const index = () => {
     return (
         <div>
-            This is github tutorialtetsetest
+            <MyNavBar />
+            <h1>This is turotial</h1>
+            <MyFooter />
+
+
         </div>
     );
 };

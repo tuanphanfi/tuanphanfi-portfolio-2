@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { Link } from "react-router-dom";
 
-const Index = () => {
+const index = () => {
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
@@ -22,9 +22,8 @@ const Index = () => {
                     data-bs-target="#navbarNav"
                     className="navbar-toggler"
                     aria-controls="navbarNav"
-                    aria-expanded={!isNavCollapsed ? true : false}
+                    aria-expanded="false"
                     aria-label="Toggle navigation"
-                    onClick={handleNavCollapse}
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -49,4 +48,4 @@ const Index = () => {
     );
 };
 
-export default Index;
+export default index;
