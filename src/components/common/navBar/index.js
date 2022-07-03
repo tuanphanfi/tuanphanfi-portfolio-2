@@ -31,14 +31,17 @@ const Index = () => {
 
                 <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
                     <ul className="navbar-nav ">
-                        <li className="nav-item active">
-                            <Link className="nav-link " to="/">Home</Link>
+                        <li className="nav-item active ">
+                            <Link className="nav-link text-warning" to="/">Home</Link>
                         </li>
                         <li className="nav-item active ">
-                            <Link className="nav-link  " to="/turotial">Github tutorial</Link>
+                            <Link className="nav-link  text-warning" to="/it-turotial">It tutorial</Link>
                         </li>
-                        <li className="nav-item active">
-                            <Link className="nav-link  disabled" to="/exercise">Exercise</Link>
+                        <li className="nav-item active ">
+                            <Link className="nav-link  text-warning" to="/eng-turotial">English tutorial</Link>
+                        </li>
+                        <li className="nav-item active ">
+                            <Link className="nav-link disabled" to="/exercise">Exercise</Link>
                         </li>
 
                     </ul>

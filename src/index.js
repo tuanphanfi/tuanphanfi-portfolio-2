@@ -4,8 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import MainPage from './components/mainPage'
-import TutorialPage from './components/tutorialPage'
+import MainPage from './components/MainPage'
+import ItTutorialPage from './components/ItTutorialPage'
+
+import EngTutorialPage from './components/EngTutorialPage'
+import IeltsSpeakingTutorialPage from './components/EngTutorialPage/IeltsSpeakingTutorialPage'
+import VocabBuilderTutorialPage from './components/EngTutorialPage/VocabBuilderTutorialPage'
+
 
 import {
   BrowserRouter,
@@ -19,7 +24,12 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/turotial" element={<TutorialPage />} />
+        <Route path="/it-turotial" element={<ItTutorialPage />} />
+        <Route path="/eng-turotial" element={<EngTutorialPage />} />
+        <Route path="/eng-turotial/ielts-speaking" element={<IeltsSpeakingTutorialPage />} />
+        <Route path="/eng-turotial/vocab-builder" element={<VocabBuilderTutorialPage />} />
+
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
